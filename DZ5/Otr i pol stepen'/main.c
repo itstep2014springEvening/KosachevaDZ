@@ -3,28 +3,26 @@
 
 int main()
 {
-    int x, p;
-    double a;
+    int x, p, a=1;
     printf ("Vvedite x ");
     scanf ("%d",&x);
     printf ("Vvedite p ");
     scanf ("%d",&p);
-    a=1;
     if (p>=0)
     {
         for (a; p>0; a*=x)
         {
             --p;
         }
-        printf ("%f", a);
+        printf ("%d", a);
     }
     else
     {
-        for (a; p<0; a=x*a)
+        for (a; p<0; a*=x)
         {
             ++p;
         }
-        printf ("%f", 1/a);
-    }
+        printf ("%d", 1/a);
+    };
     return 0;
 }
