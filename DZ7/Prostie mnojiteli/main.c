@@ -5,7 +5,7 @@ int main()
 {
     long long int n, a=2;
     printf("Vvedite chislo ");
-    scanf("%d",&n);
+    scanf("%lld",&n);
     while(a<=n)
     {
         if(n%a==0)
