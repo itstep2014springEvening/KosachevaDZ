@@ -9,7 +9,7 @@ int main()
     printf("Start!\n");
     srand(time(NULL));
     a=rand()%6+1;
-    printf("\nYour number is %d\n", a);
+    printf("Your number is %d\n", a);
     kub (a);
     b=rand()%6+1;
     printf("\nYour number is %d\n", b);
@@ -37,10 +37,10 @@ int main()
 
 int kub(int s)
 {
-for (int a=0; a<5; ++a)
+    for (int a=0; a<5; ++a)
     {
         printf ("#");
-    };
+    }
     switch (s)
     {
     case 1:
@@ -59,10 +59,10 @@ for (int a=0; a<5; ++a)
                 for (int b=0; b<3; ++b)
                 {
                     printf (" ");
-                };
-            };
+                }
+            }
             printf ("#");
-        };
+        }
         break;
     case 2:
         for (int n=0; n<3; ++n)
@@ -86,9 +86,9 @@ for (int a=0; a<5; ++a)
                 printf (" ");
                 printf (" ");
                 break;
-            };
+            }
             printf ("#");
-        };
+        }
         break;
     case 3:
         for (int n=0; n<3; ++n)
@@ -112,9 +112,9 @@ for (int a=0; a<5; ++a)
                 printf (" ");
                 printf (" ");
                 break;
-            };
+            }
             printf ("#");
-        };
+        }
         break;
     case 4:
         for (int n=0; n<3; ++n)
@@ -138,11 +138,11 @@ for (int a=0; a<5; ++a)
                 printf (" ");
                 printf ("*");
                 break;
-            };
+            }
             printf ("#");
-        };
+        }
         break;
-        case 5:
+    case 5:
         for (int n=0; n<3; ++n)
         {
             printf ("\n");
@@ -164,11 +164,11 @@ for (int a=0; a<5; ++a)
                 printf (" ");
                 printf ("*");
                 break;
-            };
+            }
             printf ("#");
-        };
+        }
         break;
-        case 6:
+    case 6:
         for (int n=0; n<3; ++n)
         {
             printf ("\n");
@@ -190,14 +190,15 @@ for (int a=0; a<5; ++a)
                 printf (" ");
                 printf ("*");
                 break;
-            };
+            }
             printf ("#");
-        };
+        }
         break;
-    };
+    }
     printf ("\n");
     for (int a=0; a<5; ++a)
     {
         printf ("#");
-    };
+    }
+    return 0;
 }
