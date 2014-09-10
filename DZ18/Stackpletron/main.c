@@ -4,7 +4,7 @@
 int main()
 {
     const int N=100;
-    int memory[N], x=0, i=0, instruction=0, accumulate=0, operation, bias=0;
+    int memory[N], x=0, i=0, instruction=0, accumulate=0, operation, bias=0, top=100;
     printf ("Enter the command:\n");
     while (x!=-99999)
     {
@@ -34,7 +34,7 @@ int main()
             instruction++;
             break;
         case 21:
-            memory[top+bias]=accumulate;
+            memory[way+bias]=accumulate;
             instruction++;
             break;
         case 22:
