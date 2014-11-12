@@ -2,7 +2,6 @@
 #include <cstdio>
 
 void createNewBoard(int *board);
-void freeBoard(int *board);
 void game(int *board);
 void printBoard(int *board);
 int check(int *board);
@@ -12,7 +11,6 @@ int main()
     int board[14];
     createNewBoard(board);
     game(board);
-    freeBoard(board);
     return 0;
 }
 
@@ -22,13 +20,6 @@ void createNewBoard(int *board)
         board[i]=6;
     board[6]=0;
     board[13]=0;
-}
-
-void freeBoard(int *board)
-{
-    for(int i=0; i<14; ++i)
-        board[i]=0;
-    free(board);
 }
 
 void game(int *board)
