@@ -28,6 +28,7 @@ void freeBoard(int *board)
 {
     for(int i=0; i<14; ++i)
         board[i]=0;
+    free(board);
 }
 
 void game(int *board)
