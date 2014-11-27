@@ -145,10 +145,6 @@ void printBoard(int *board)
 
 int check(int *board)
 {
-    if(board[6]>36)
-        return 1;
-    if(board[13]>36)
-        return 2;
     if(board[13]==36 && board[13]==board[6])
         return 3;
     int temp1=0, temp2=0;
@@ -157,14 +153,12 @@ int check(int *board)
     for(int i=7; i<13; ++i)
         temp2+=board[i];
     if(temp1==0)
-    {
         board[13]+=temp2;
-        return 2;
-    }
     if(temp2==0)
-    {
         board[6]+=temp1;
+    if(board[6]>36)
         return 1;
-    }
+    if(board[13]>36)
+        return 2;
     return 0;
 }
